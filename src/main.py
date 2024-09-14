@@ -11,16 +11,23 @@ def driver_function():
 
 
 def autonomous_function():
-    intake_1st_stage.set_velocity(100, PERCENT)
-    intake_2nd_stage.set_velocity(100, PERCENT)
-    pid_driver.drive(-1000)
+    intake_1st_stage.set_velocity(525, RPM)
+    intake_2nd_stage.set_velocity(525, RPM)
+    pid_driver.drive(-1000, True)
     clamp.set(True)
     intake_1st_stage.spin(REVERSE)
     intake_2nd_stage.spin(FORWARD)
-    pid_turner.turn(50, FRAME_HEADING_RELATIVE)
+    wait(1000, MSEC)
+    pid_turner.turn(35, FRAME_HEADING_RELATIVE)
     intake_retract.set(True)
-    pid_driver.drive(550)
+    pid_driver.drive(650)
     intake_retract.set(False)
+    pid_turner.turn(-145, FRAME_HEADING_RELATIVE)
+    wait(100, MSEC)
+    pid_driver.drive(800, True)
+    pid_turner.turn(40, FRAME_HEADING_RELATIVE)
+    wait(100, MSEC)
+    pid_driver.drive(-885, True)
 
     pass
 
