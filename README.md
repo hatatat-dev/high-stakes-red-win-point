@@ -1,2 +1,2 @@
-# high-stakes-manual
-21919A VEX manual control program
+# high-stakes-red-win-point
+21919A VEX program for red with win point

@@ -3,7 +3,7 @@
 from lib.log import *
 from high_stakes.events import *
 
-open_log("red_winpoint.csv")
+open_log("red-win-point.csv")
 
 
 def driver_function():
@@ -28,8 +28,6 @@ def autonomous_function():
     pid_turner.turn(40, FRAME_HEADING_RELATIVE)
     wait(100, MSEC)
     pid_driver.drive(-885, True)
-
-    pass
 
 
 init_event_handling()
