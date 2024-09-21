@@ -1,5 +1,5 @@
 # high-stakes-red-win-point
-This is VEX team 21919A's program for the autonomous win point on the left side of the red alliance side of the field. The location of this quadrant is highlighted below in the image with a picture of the field. Below that is a diagram of the autonomous path that we create in advance to display the locations our robot will be in due to our PID programming that we have implemented in our code.
+This is VEX team 21919A's program for the autonomous win point on the right side of the red alliance side of the field. The location of this quadrant is highlighted below in the image with a picture of the field. Below that is a diagram of the autonomous path that we create in advance to display the locations our robot will be in due to our PID programming that we have implemented in our code.
 
 ## Organization of the Repository
 You may notice that this repository is unlike most other VEX robotics Github repositories. Instead of multiple files being contained in one repository and a primary `main.py` file that contains all the code for running the robot along with the code for the autonomous routines. Most VEX repositories, including the default that VEX provides will contain something that looks similar to the following:
